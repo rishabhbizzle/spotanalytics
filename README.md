@@ -3,7 +3,7 @@
 
 One Stop Destination for all Spotify Streaming Records and Data.
 
-![alt](https://i.ibb.co/6y0r4Zf/1.png)
+![alt](https://i.ibb.co/0hC1YXs/1.png)
 
 
 ## Project Links
