@@ -1,0 +1,96 @@
+.context{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  flex-direction: column;
+  /* border: 2px solid green; */
+}
+  
+  .context h1 {
+    /* font-family: 'Sora', sans-serif; */
+    font-size: 75px;
+    color: black;
+    font-weight: 600;
+  }
+  .misc{
+    font-size: 35px;
+  }
+  .context p {
+    font-size: 16px;
+    font-weight: 300px;
+    text-align: center;
+    /* font-family: 'Inter', sans-serif; */
+    color: #a8aab3;
+  }
+  
+  #includedContent table, #includedArtists table{
+      color: #303f5e;
+      font-size: 1.2em;
+      margin-top: 4em;
+      /* font-family: 'Sora', sans-serif; */
+  }
+  #includedContent table thead, #includedArtists table thead{
+    background-image: linear-gradient(-0deg, #210664, #0f051c 60%);
+    color: white;
+  
+  }
+  #includedContent table td{
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+  }
+  
+
+  
+
+
+    .front-artist{
+      background-image: linear-gradient(-0deg, #210664, #0f051c 50%);
+      
+      /* border: 3px solid green; */
+    }
+  
+    /* Billion Club Section */
+  .carousel-inner img{
+    border-radius: 30px;
+  }
+  
+  #includedArtists table img{
+    height: 60px;
+    width: 60px;
+  }
+    
+  
+    @media only screen and (max-width: 700px) {
+
+      .context h1 {
+        /* font-family: 'Sora', sans-serif; */
+        font-size: 55px;
+        text-align: center;
+      }
+
+      .context p{
+        text-align: center;
+      }
+
+      #includedContent table{
+          /* text-align: center; */
+          font-size: 0.62em;
+      }
+      
+      #includedArtists table{
+        font-size: 0.68em;
+
+      }
+      #includedArtists table img{
+        height: 40px;
+        width: 40px;
+      }
+      
+    
+      .front-main p {
+          font-size: 15px;
+        }
+      
+    }

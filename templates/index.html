@@ -1,0 +1,228 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="../static/assets/css/style.css">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/assets/css/nav.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/41148ebcfb.js" crossorigin="anonymous"></script>
+    <title>
+      SpotStreams | One Stop Destionation for Spotify Data
+    </title>
+  </head>
+  <body >
+    <div class="front">
+    <header>
+      <a class="logo" href="/"><img src="../static/assets/images/logo.jpg" alt="logo"></a>
+            <nav class="nav">
+                <ul class="nav__links">
+                    {% comment %} <li><a href="#records">Features</a></li> {% endcomment %}
+                    <li><a href="#artists">Artists</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="#" target="_blank"><i class='bx bxl-twitter'></i>  Follow Us</a>
+            <p class="menu cta">Menu</p>
+        </header>
+        <div id="mobile__menu" class="overlay">
+            <a class="close">&times;</a>
+            <div class="overlay__content">
+                <ul>
+                <li><a href="#artists">Artists</a></li>
+                <li><a href="#">Blog</a></li>
+                {% comment %} <li><a href="#billion"></a></li> {% endcomment %}
+                </ul>
+            </div>
+        </div>
+      <div class="hero">
+        <div class="first">
+          <h1 class"text-center">SpotAnalytics</h1>
+          <p>
+            One Stop Destination For All Spotify Related Stats and Data.
+          </p>
+          <a href="#main-boxes"> <button class="startedBtn">Get Started</button></a>
+        </div>
+        <div class="second">
+          <img src="../static/assets/images/illustration-mockups.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <main>
+      <section class="container">
+        <div class="boxes" id="main-boxes">
+          <a href="/most-streamed-artists">
+          <div class="box" data-aos="zoom-in-up">
+            <div class="text">
+              <h2>Most Streamed Artists</h2>
+              <p>
+                Checout the Most Streamed artists in history of Spotify.
+                
+              </p>
+            </div>
+            <div class="img">
+              <img src="../static/assets/images/concept-of-data-analysis-and-maintenance.svg" alt="" />
+            </div>
+          </div>
+        </a>
+        <a href="/most-streamed-songs">
+          <div class="box" data-aos="zoom-in-up">
+            
+            <div class="text">
+              <h2>Most Streamed Songs</h2>
+              <p>
+                Checkout the Most Streamed songs in history of Spotify.
+              </p>
+            </div>
+            <div class="img">
+              <img src="../static/assets/images/concept-of-seo-ranking.svg" alt="" />
+            </div>
+          </div>
+        </a>
+        <a href="/monthly-listeners">
+          <div class="box" data-aos="zoom-in-up">
+            
+            <div class="text">
+              <h2>Monthly Listeners Stats</h2>
+              <p>
+                Checkout the current Monthly Listeners of the most popular astists and see who's on top.
+              </p>
+            </div>
+            <div class="img">
+              <img src="../static/assets/images/concept-of-data-analysis-and-maintenance.svg" alt="" />
+            </div>
+          </div>
+        </a>
+        </div>
+      </section>
+      <section id="artists">
+        
+          <div class="artists-heading">
+            <p class="text-center">Artists</p>
+          </div>
+          <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+              <div class="box-artist" data-aos="fade-up"
+              data-aos-duration="1100">
+              <a href="/artists/justinbieber">
+
+                  <div class="our-services settings">
+                      <div class="icon"> <img src="../static/assets/images/jb.png"> </div>
+                      <h2>Justin Bieber</h2>
+                      {% comment %} <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p> {% endcomment %}
+                  </div>
+                </a>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="box-artist" data-aos="fade-up"
+              data-aos-duration="1500">
+              <a href="/artists/taylorswift">
+                  <div class="our-services speedup">
+                      <div class="icon"> <img src="../static/assets/images/ts.png"> </div>
+                      <h2>Taylor Swift</h2>
+                      {% comment %} <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p> {% endcomment %}
+                  </div>
+                </a>
+              </div> 
+          </div>
+          <div class="col-md-4">
+              <div class="box-artist" data-aos="fade-up"
+              data-aos-duration="2000">
+              <a href="/artists/bts">
+                  <div class="our-services privacy">
+                      <div class="icon"> <img src="../static/assets/images/bts.png"> </div>
+                      <h2>BTS</h2>
+                      {% comment %} <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit </p> {% endcomment %}
+                  </div>
+              </div>
+            </a>
+          </div>
+      </div>
+      <div class="row">
+          {% comment %} <div class="col-md-4">
+              <div class="box-artist" data-aos="fade-up"
+              data-aos-duration="1100">
+                  <div class="our-services backups">
+                      <div class="icon"> <img src="../static/assets/images/ag.png"> </div>
+                      <h2>Ariana Grande</h2>
+                  </div>
+              </div>
+          </div> {% endcomment %}
+          <div class="col-md-4 mx-auto">
+              <div class="box-artist" data-aos="fade-up"
+              data-aos-duration="1500">
+                <a href="/artists/oliviarodrigo">
+                  <div class="our-services ssl">
+                      <div class="icon"> <img src="../static/assets/images/or.png"> </div>
+                      <h2>Olivia Rodgiro</h2>
+                  </div>
+                </a>
+              </div>
+          </div>
+          {% comment %} <div class="col-md-4 mb-5">
+              <div class="box-artist" data-aos="fade-up"
+              data-aos-duration="2000">
+                  <div class="our-services database">
+                      <div class="icon"> <img src="../static/assets/images/hs.png"> </div>
+                      <h2>Harry Styles</h2>
+                  </div>
+              </div>
+          </div>
+      </div> {% endcomment %}
+    </div>
+      </section>
+      <section >
+        <div class="card-home mt-5" >
+          <h3>Your Favourite artist is missing ??</h3>
+          <a href="/request"><button class="startedBtn"> Request Now</button> </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div>
+          <i><img src="./images/logo.svg" alt="" /></i>
+          <div class="div">
+            <i><img src="../static/assets/images/icon-location.svg" alt="" /></i>
+            <p>
+              We are not associated with & Spotify AB or any of it's partners in any way. This is just a Hobby project.
+            </p>
+          </div>
+          <div class="div">
+            <i><img src="../static/assets/images/icon-email.svg" alt="" /></i>
+            <p>spotanalytics1@gmail.com</p>
+          </div>
+        </div>
+        <div class="para">
+          <a href="#">About Us</a>
+          <a href="#">Donate</a>
+        </div>
+        <div class="para">
+          <a href="/blog">Blog</a>
+          <a href="/contact">Contact Us</a>
+        </div>
+      </div>
+    </footer>
+    <script src="../static/assets/js/mobile.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({
+            offset: 60,
+            duration: 900
+          });
+        </script>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+body.dark{
+    background-color: #111;
+    background-image: radial-gradient(#773d8b 2%, transparent 3%);
+  }
+  body.dark header{
+    background-color: rgba(17, 17, 17, 0.525);
+    
+  }
+  body.dark .nav__links a,
+  .cta,
+  .overlay__content a {
+      color: white;
+  }
+  body.dark .nav__links li a:hover {
+    color: #9b59b6;
+  }
+  
+  body.dark .cta {
+    background-color: #8e44ad;
+    color: #edf0f1;
+  
+  }
+  
+  body.dark .cta:hover {
+    box-shadow: 0px 7px 16px #9b59b6;
+  }
+  
+  body.dark h1{
+    /* background-color: #111; */
+    color: white;
+    
+  }
+  
+  body.dark .front-main .btn {
+    background: #8e44ad;
+    box-shadow: 0px 7px 20px #9b59b6;
+  }
+  
+  body.dark .front-main .name {
+    color: #9b59b6;
+  }
+  body.dark .front-main .btn:hover {
+    border: 1px solid #8e44ad;
+    box-shadow: 0px 10px 30px #9b59b6;
+    transition: 0.5 ease;
+  }
+  
+  body.dark .second-records-cards .card-body{
+    background-color: #111;
+  }
+  
+  body.dark second-records p {
+    font-size: 18px;
+    font-weight: 300px;
+    font-family: 'Inter', sans-serif;
+    color: #a8aab3;
+  }
+  
+  body.dark .second-records-cards .card img {
+    border-radius: 15px;
+    box-shadow: rgba(246, 246, 247, 0.315) 0px 8px 24px;
+  }
+  
+  body.dark .second-records-cards .card-body .card-title {
+    font-size: 22px;
+    font-family: 'Sora', sans-serif;
+    color: #9b59b6;
+  }
+  
+  body.dark .second-records p {
+    font-family: 'Inter', sans-serif;
+    color: #ebecf0;
+  }
+  
+  body.dark .context h1 {
+    font-family: 'Sora', sans-serif;
+    font-size: 55px;
+    color: #7f4894;
+    font-weight: 500;
+  }
+  
+  body.dark .context p {
+    font-size: 18px;
+    font-weight: 300px;
+    font-family: 'Inter', sans-serif;
+    color: #dcdde5;
+  }
+  
+  body.dark .stream-type h5{
+    color: white;
+  }
+  
+  body.dark #myChart{
+    background-color: #111;
+  }
+  
+  body.dark table{
+    /* background-color: black; */
+    color: white;
+  }
+  
+  body.dark #includedAlbums table{
+    background-color: black;
+    color: white;
+  }
+  
+    body.dark #includedAlbums {
+      background-color:#111;
+    }
+    
+   body.dark  #includedAlbums table{
+        margin-top: 20px;
+        color: white;
+        font-size: 1.2em;
+        font-family: 'Sora', sans-serif;
+    }
+    
+    body.dark #includedAlbums table thead{
+    
+      background-color: #8e44ad;
+      color: white;
+    
+    }
+  
+  
+  .dark-div{
+    margin: 0px 30px;
+  }
+  
+  .checkbox {
+    margin: 0px 0px;
+      opacity: 0;
+      position: absolute;
+  }
+  
+  .label {
+      background-color: #111;
+      border-radius: 50px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px;
+      position: relative;
+      height: 26px;
+      width: 50px;
+      transform: scale(1.5);
+  }
+  
+  .label .ball {
+      background-color: #fff;
+      border-radius: 50%;
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      height: 22px;
+      width: 22px;
+      transform: translateX(0px);
+      transition: transform 0.2s linear;
+  }
+  
+  .checkbox:checked + .label .ball {
+      transform: translateX(24px);
+  }
+  
+  
+  .fa-moon {
+      color: #f1c40f;
+  }
+  
+  .fa-sun {
+      color: #f39c12;
+  }

@@ -1,0 +1,158 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../static/assets/css/style.css" />
+    <link rel="stylesheet" href="../static/assets/css/nav.css" />
+    <link rel="stylesheet" href="../static/assets/css/moststreamed.css" />
+
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <title>
+      SpotStreams | One Stop Destionation for Spotify Data
+    </title>
+  </head>
+  <body >
+    <div class="front">
+      <header>
+        <a class="logo" href="/"><img src="../static/assets/images/logo.jpg" alt="logo"></a>
+              <nav class="nav">
+                  <ul class="nav__links">
+                      {% comment %} <li><a href="#records">Features</a></li> {% endcomment %}
+                      <li><a href="#artists">Artists</a></li>
+                      <li><a href="/blog">Blog</a></li>
+                  </ul>
+              </nav>
+            <a class="cta" href="#" target="_blank"><i class='bx bxl-twitter'></i>  Follow Us</a>
+              <p class="menu cta">Menu</p>
+          </header>
+          <div id="mobile__menu" class="overlay">
+              <a class="close">&times;</a>
+              <div class="overlay__content">
+                  <ul>
+                  <li><a href="#artists">Artists</a></li>
+                  <li><a href="/blog">Blog</a></li>
+                  {% comment %} <li><a href="#billion"></a></li> {% endcomment %}
+                  </ul>
+              </div>
+          </div>
+        <div class="hero">
+          <div class="first">
+            <h1 class"text-center">SpotAnalytics</h1>
+            <p>
+              One Stop Destination For All Spotify Related Stats and Data.
+            </p>
+            <button class="startedBtn">Go Back</button>
+          </div>
+          <div class="second">
+            <img src="../static/assets/images/illustration-mockups.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    <main>
+      <section>
+        
+      </section>
+        </div>
+    
+        <section class="fourth-streams container mt-5 mb-5" id="streams">
+          <div class="context">
+              <h1 class="mb-3">Most Streamed Songs</h1>
+              <p>
+                Following list holds the current top 100 most streamed tracks on Spotify. Justin Bieber has the most no. of anthems in list with 6 tracks.
+
+              </p>
+          </div>
+                  
+          <div id="includedContent" class="mx-auto" data-aos="fade-up">
+              
+              <table id ="myTable" class="sortable table table-striped table-hover dataframe mx-auto" style="text-align: center; max-width: 95%;">
+                {% comment %} <caption>List of users</caption> {% endcomment %}
+                <thead>
+                  <tr>
+                    <th>RANK</th>
+                    <th>SONG</th>
+                    <th>STREAMS(B)</th>
+                    <th>ARTIST</th>
+                    <th>RELEASE DATE</th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                <!-- jinja2 Technique -->
+                {% if d %}  
+                {% for i in d %}
+                  <tr class="mx-5">
+                    <td>{{i.Rank}}</td>
+                    <td>{{i.Song}}</td>
+                    <td>{{i.Streams}}</td>
+                    <td>{{i.Artist}}</td>
+                    <td>{{i.Date}}</td>
+                  </tr>
+                {% endfor %}
+                {% endif %}
+                </tbody>
+              </table>
+            </div>
+            <p style="text-align: right;">As of <span id="datetime"></span></p>
+
+  
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div>
+          <i><img src="./images/logo.svg" alt="" /></i>
+          <div class="div">
+            <i><img src="../static/assets/images/icon-location.svg" alt="" /></i>
+            <p>
+              We are not associated with & Spotify AB or any of it's partners in any way. This is just a Hobby project.
+            </p>
+          </div>
+          <div class="div">
+            <i><img src="../static/assets/images/icon-email.svg" alt="" /></i>
+            <p>spotanalytics1@gmail.com</p>
+          </div>
+        </div>
+        <div class="para">
+          <a href="#">About Us</a>
+          <a href="#">Donate</a>
+        </div>
+        <div class="para">
+          <a href="/blog">Blog</a>
+          <a href="/contact">Contact Us</a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      var dt = new Date(Date.now() - 864e5);
+      document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+      </script>
+    <script src="../static/assets/js/mobile.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({
+            offset: 135,
+            duration: 800
+          });
+        </script>
+  </body>
+</html>

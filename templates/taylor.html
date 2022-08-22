@@ -1,0 +1,354 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../static/assets/css/style.css" />
+    <link rel="stylesheet" href="../static/assets/css/artist.css" />
+    <link rel="stylesheet" href="../static/assets/css/nav.css" />
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <title>
+      SpotStreams | One Stop Destionation for Spotify Data
+    </title>
+  </head>
+  <body >
+    <div class="front-artist">
+    <header>
+      <a class="logo" href="/"><img src="../static/assets/images/logo.jpg" alt="logo"></a>
+            <nav class="nav">
+                <ul class="nav__links">
+                    <li><a href="/#artists">Artists</a></li>
+                    <li><a href="#streams">Streams</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="#" target="_blank"><i class='bx bxl-twitter'></i>  Follow Us</a>
+            <p class="menu cta">Menu</p>
+        </header>
+        <div id="mobile__menu" class="overlay">
+            <a class="close">&times;</a>
+            <div class="overlay__content">
+                <ul>
+                <li><a href="/#artists">Artists</a></li>
+                <li><a href="#streams">Streams</a></li>
+                <li><a href="/blog">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    <main>
+      
+        <section class="amy-section container mb-5">
+            <div class="amy-headings">
+              <h2 class="amy-headings__title | spacer">
+                Taylor Swift
+              </h2>
+              <p class="amy-headings__text | spacer mt-5">
+                Taylor Swift is an American singer and songwriter. She is known for her narrative songwriting. 
+                It's not wrong to say that she is one of the most influential female artist of this generation.
+              </p>
+            </div>
+            <img src="../static/assets/images/ts.png" alt="picture or Amy" class="amy-img container" />
+
+          </section>
+        </div>
+          <section class="second-records container mb-5" id="records">
+            <div class="context">
+                <h1 class="mb-4">Iconic Records</h1>
+                <p class="mb-4">
+                </p>
+            </div>
+            <div class="second-records-cards">
+    
+                <div class="row row-cols-1 mb-4 row-cols-md-2 g-4">
+                    <div class="col mb-4">
+                        <div class="card border-0" data-aos="fade-right">
+                            <img src="../static/assets/images/ts4.jpg" class="card-img-top mb-3" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title mb-3">Biggest Debut For Female Album</h5>
+                                <p class="card-text">
+                                    "Red (Taylor's version)" amassed over 90.8 million streams on day one, which makes it the biggest album debut for a female artist. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" style="overflow-x: hidden">
+                        <div class="card border-0" data-aos="fade-left">
+                            <img src="../static/assets/images/ts3.jpg" class="card-img-top mb-3" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title mb-3">Most Streamed Female in a day</h5>
+                                <p class="card-text">
+                                    On 12th november 2021, she recieved 122.9 million streams, which is highest for a female artists in Spotify history.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card border-0" data-aos="fade-right">
+                            <img src="../static/assets/images/ts2.jpg" class="card-img-top mb-3" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title mb-3">Biggest Female Song Debut on US Spotify</h5>
+                                <p class="card-text">
+                                  With 4.17 million streams, "the 1" holds the record of biggest song debut by a female artist in the platform's history
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" style="overflow-x: hidden">
+                        <div class="card border-0" data-aos="fade-left">
+                            <img src="../static/assets/images/ts1.jpg" class="card-img-top mb-3" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title mb-3">2nd Most Streamed Female Artist</h5>
+                                <p class="card-text">
+                                  With over 31 Billion streams, she's currently the 2nd most streamed female artist in Spotify
+                                  history.
+                                </p>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="third-billion container mt-5 mb-5" id="billion">
+          <div class="context">
+              <h1 class="mb-3">Billion Club</h1>
+              <p>
+                  Here are his songs which has over 1 Billion streams on Spotify.
+              </p>
+          </div>
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" data-aos="zoom-in">
+              <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                      aria-current="true" aria-label="Slide 1"></button>
+                  {% comment %} <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                      aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                      aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                      aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+                      aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5"
+                      aria-label="Slide 6"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6"
+                      aria-label="Slide 7"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7"
+                      aria-label="Slide 8"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="8"
+                      aria-label="Slide 9"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="9"
+                      aria-label="Slide 10"></button> {% endcomment %}
+  
+  
+              </div>
+              <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="4000">
+                      <img src="../static/assets/images/tsbillion.png" class="d-block w-100" alt="...">
+                  </div>
+                  {% comment %} <div class="carousel-item" data-bs-interval="5000">
+                      <img src="../static/peaches.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                      <img src="../static/assets/imamges/despacito.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                      <img src="../static/lmly.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="../static/ly.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="../static/assets/images/imo.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="../static/sorry.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="../static/idc.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="../static/wdym.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="../static/cw.jpg" class="d-block w-100" alt="...">
+                  </div> {% endcomment %}
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+      </section>
+        <section class="fourth-streams container mt-5 mb-5" id="streams">
+          <div class="context">
+              <h1 class="mb-3">Streams</h1>
+              <p>
+                  Discography streams !!
+              </p>
+          </div>
+          <div class="stream-type" style="margin-top: 50px;">
+              <h5 class="misc mb-2">
+                  Albums
+              </h5>
+              <div class="context mt-3 mb-4" >
+              <p>
+                  Click on the headers to sort the songs based on that. For eg- Click on 'STREAMS' to see the Most Streamed to Least Streamed list.
+              </p>
+          </div>
+          </div>
+          <div id="includedAlbums" class="mx-auto" data-aos="fade-up" style="margin-top: 20px;">
+              <table class="sortable table table-striped table-hover dataframe">
+                <thead>
+                  <tr>
+                    <th>NAME</th>
+                    <th>STREAMS</th>
+                    <th>DAILY</th>
+                  </tr>
+                </thead>
+                <tbody>
+                <!-- jinja2 Technique -->
+                {% if d %}  
+                {% for i in d %}
+                  <tr>
+                    <td>{{i.NAME}}</td>
+                    <td>{{i.STREAMS}}</td>
+                    <td>{{i.DAILY}}</td>
+                  </tr>
+                {% endfor %}
+                {% endif %}
+                </tbody>
+              </table>
+            </div>
+  
+          <div class="stream-type" style="margin-top: 40px;">
+              <h5 class="misc mb-2">
+                  Songs
+              </h5>
+          </div>
+          <div class="context mt-3 mb-4" >
+              <p>
+                  Click on the headers to sort the songs based on that. For eg- Click on 'STREAMS' to see the Most Streamed to Least Streamed list.
+              </p>
+          </div>
+          <div class="alert alert-warning" srole="alert" style="margin: 25px 0px;">
+              Sometimes the data for "Features" songs might be inconsistent. So there's a possibility of inaccurate daily gains or missing songs.
+            </div>
+            
+              <div class="container justify-content-center mt-5 mb-2">
+                  <div class="input-group">
+                      <input type="text" class="form-control input-text" id="myInput"  onkeyup="myFunction()" placeholder="Search for a Specific Song....">
+              </div>
+                  </div>
+                  
+          <div id="includedContent" class="mx-auto" data-aos="fade-up">
+              
+              <table id ="myTable"class="sortable table table-striped table-hover dataframe">
+                <thead>
+                  <tr>
+                    <th>ALBUM</th>
+                    <th>SONG</th>
+                    <th>STREAMS</th>
+                    <th>DAILY</th>
+                  </tr>
+                </thead>
+                <tbody>
+                <!-- jinja2 Technique -->
+                {% if s %}  
+                {% for i in s %}
+                  <tr>
+                    <td>{{i.ALBUM}}</td>
+                    <td>{{i.SONG}}</td>
+                    <td>{{i.STREAMS}}</td>
+                    <td>{{i.DAILY}}</td>
+                  </tr>
+                {% endfor %}
+                {% endif %}
+                </tbody>
+              </table>
+              <script src="../static/assets/js/sorttable.js"></script>
+            </div>
+  
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div>
+          <i><img src="./images/logo.svg" alt="" /></i>
+          <div class="div">
+            <i><img src="../static/assets/images/icon-location.svg" alt="" /></i>
+            <p>
+              We are not associated with & Spotify AB or any of it's partners in any way. This is just a Hobby project.
+            </p>
+          </div>
+          <div class="div">
+            <i><img src="../static/assets/images/icon-email.svg" alt="" /></i>
+            <p>spotanalytics1@gmail.com</p>
+          </div>
+        </div>
+        <div class="para">
+          <a href="#">About Us</a>
+          <a href="#">Donate</a>
+        </div>
+        <div class="para">
+          <a href="/blog">Blog</a>
+          <a href="/contact">Contact Us</a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function myFunction() {
+        // Declare variables
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+      
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[1];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }
+      }
+      </script>
+    <script src="../static/assets/js/mobile.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({
+            offset: 135,
+            duration: 800
+          });
+        </script>
+  </body>
+</html>

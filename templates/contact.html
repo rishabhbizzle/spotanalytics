@@ -1,0 +1,109 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../static/assets/css/style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/assets/css/contact.css" />
+    <link rel="stylesheet" href="../static/assets/css/nav.css" />
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <title>
+      SpotStreams | One Stop Destionation for Spotify Data
+    </title>
+  </head>
+  <body >
+    {% comment %} <div class="front"> {% endcomment %}
+    <header>
+      <a class="logo" href="/"><img src="../static/assets/images/logo.jpg" alt="logo"></a>
+            <nav class="nav">
+                <ul class="nav__links">
+                    {% comment %} <li><a href="#records">Features</a></li> {% endcomment %}
+                    <li><a href="#streams">Artists</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="#" target="_blank"><i class='bx bxl-twitter'></i>  Follow Us</a>
+            <p class="menu cta">Menu</p>
+        </header>
+        <div id="mobile__menu" class="overlay">
+            <a class="close">&times;</a>
+            <div class="overlay__content">
+                <ul>
+                <li><a href="#records">Artists</a></li>
+                <li><a href="#streams">Blog</a></li>
+                {% comment %} <li><a href="#billion"></a></li> {% endcomment %}
+                </ul>
+            </div>
+          </div>
+
+    <section>
+        <div class="container mb-5">
+            <div class="contact-form-wrapper d-flex justify-content-center">
+                <form action="#" class="contact-form">
+                  <h5 class="title">Contact us</h5>
+                  <p class="description">Feel free to contact us if you need any assistance, any help or another question.
+                  </p>
+                  <div>
+                    <input type="name" class="form-control rounded border-white mb-3 form-input" id="name" placeholder="Name" required>
+                  </div>
+                  <div>
+                    <input type="email" class="form-control rounded border-white mb-3 form-input" placeholder="Email" required>
+                  </div>
+                  <div>
+                    <textarea id="message" class="form-control rounded border-white mb-3 form-text-area" rows="5" cols="30" placeholder="Message" required></textarea>
+                  </div>
+                  <div class="submit-button-wrapper">
+                    <button type="submit"> Submit</button>
+                  </div>
+                </form>
+              </div>
+     </div>
+    </div>
+    </section>
+
+    <footer>
+      <div class="footer">
+        <div>
+          <i><img src="./images/logo.svg" alt="" /></i>
+          <div class="div">
+            <i><img src="../static/assets/images/icon-location.svg" alt="" /></i>
+            <p>
+              We are not associated with & Spotify AB or any of it's partners in any way. This is just a Hobby project.
+            </p>
+          </div>
+          <div class="div">
+            <i><img src="../static/assets/images/icon-email.svg" alt="" /></i>
+            <p>spotanalytics1@gmail.com</p>
+          </div>
+        </div>
+        <div class="para">
+          <a href="#">About Us</a>
+          <a href="#">Donate</a>
+        </div>
+        <div class="para">
+          <a href="/blog">Blog</a>
+          <a href="/contact">Contact Us</a>
+        </div>
+      </div>
+    </footer>
+    <script src="../static/assets/js/mobile.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+  </body>
+</html>
